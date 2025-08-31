@@ -31,13 +31,13 @@
       }
       .bio {
         font-size: 1.2em;
-        margin-bottom: 10px; /* Adjusted margin */
+        margin-bottom: 10px;
       }
-      .about-me { /* New style for the about me paragraph */
+      .about-me {
         font-size: 1em;
         margin-bottom: 20px;
-        text-align: center; /* Text will now be centered */
-        padding: 0 10px; /* Optional padding */
+        text-align: center;
+        padding: 0 10px;
       }
       a {
         color: #0366d6;
@@ -52,12 +52,17 @@
       .project {
         margin-bottom: 20px;
       }
+      
+      .projects h2:not(:first-child) {
+        margin-top: 50px;
+      }
+      
       @media (max-width: 600px) {
         .container {
           padding: 15px;
         }
         .about-me {
-           padding: 0 5px; /* Optional padding for mobile */
+           padding: 0 5px;
         }
       }
     </style>
@@ -68,8 +73,8 @@
         <h1>Decoding Chris</h1>
         <p class="bio">AI Engineer</p>
         <p class="about-me">
-          I'm Chris, a bilingual (English & French) AI Engineer based in Manchester, UK.<br> 
-          I work with Python and the latest AI Models.
+          <b>Hi, I’m Chris.</b> A bilingual AI Engineer (English & French) based in Manchester, United Kingdom.<br>
+          I turn Python and cutting-edge AI models into production-ready solutions that solve real-world problems.
         </p>
         <p>
           <a
@@ -78,33 +83,66 @@
             rel="noopener noreferrer"
             >GitHub</a
           >
-          |
-          <a
-            href="https://huggingface.co/decodingchris"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Hugging Face</a
-          >
-          |
+          -
           <a
             href="https://www.linkedin.com/in/decodingchris/"
             target="_blank"
             rel="noopener noreferrer"
             >LinkedIn</a
           >
-          |
+          -
+          <a
+            href="https://medium.com/@decodingchris"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Blog</a
+          >
+          -
+          <a
+            href="https://huggingface.co/decodingchris"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Hugging Face</a
+          >
+          -
           <a
             href="https://github.com/cmakoumbou"
             target="_blank"
             rel="noopener noreferrer"
-            >Old & Non-AI GitHub</a
+            >GitHub (legacy)</a
           >
         </p>
       </header>
 
       <main>
         <section class="projects">
-          <h2>Projects</h2>
+          <h2>AI & Machine Learning Projects</h2>
+
+          <div class="project">
+            <h3>
+              <a
+                href="https://github.com/decodingchris/promptmetrics"
+                target="_blank"
+                rel="noopener noreferrer"
+                >promptmetrics</a
+              >
+            </h3>
+            <p>MLOps tool to evaluate LLMs against the latest benchmarks.</p>
+            <p><strong>Main Developer:</strong> AI</p>
+          </div>
+
+          <div class="project">
+            <h3>
+              <a
+                href="https://github.com/decodingchris/Genesis"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Genesis</a
+              >
+            </h3>
+            <p>An autonomous platform for self-verifying AI agents.</p>
+            <p><strong>Main Developer:</strong> AI</p>
+          </div>
 
           <div class="project">
             <h3>
@@ -135,29 +173,18 @@
           <div class="project">
             <h3>
               <a
-                href="https://pypi.org/project/tasknow/"
+                href="https://huggingface.co/collections/decodingchris/squad-1-and-2-refined-679b55037c51557ea2e69777"
                 target="_blank"
                 rel="noopener noreferrer"
-                >TaskNow</a
+                >SQuAD 1 & 2 Refined</a
               >
             </h3>
-            <p>
-              A terminal to-do app that helps you focus on one task at a time.
-            </p>
-            <p><strong>Main Developer:</strong> AI</p>
+            <p>Refined versions of the SQuAD v1 and v2 datasets to ensure higher data quality.</p>
+            <p><strong>Main Developer:</strong> Chris</p>
           </div>
-          <div class="project">
-            <h3>
-              <a
-                href="https://pypi.org/project/gitghost/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >GitGhost</a
-              >
-            </h3>
-            <p>Private version control for your Git ignored files.</p>
-            <p><strong>Main Developer:</strong> AI</p>
-          </div>
+
+          <h2>Decision-Making & Psychology Projects</h2>
+
           <div class="project">
             <h3>
               <a
@@ -170,6 +197,24 @@
             <p>Improve your decision-making skills with practical exercises.</p>
             <p><strong>Main Developer:</strong> Chris</p>
           </div>
+
+          <h2>Utility Projects</h2>
+
+          <div class="project">
+            <h3>
+              <a
+                href="https://pypi.org/project/gitghost/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitGhost</a
+              >
+            </h3>
+            <p>Private version control for your Git ignored files.</p>
+            <p><strong>Main Developer:</strong> AI</p>
+          </div>
+
+          <h2>Productivity Projects</h2>
+
           <div class="project">
             <h3>
               <a
@@ -182,6 +227,7 @@
             <p>Automatically improve your online focus using rhythmic light cues.</p>
             <p><strong>Main Developer:</strong> AI</p>
           </div>
+
           <div class="project">
             <h3>
               <a
@@ -194,6 +240,7 @@
             <p>Maintain a healthy work-life balance with an automated timer for work and rest periods.</p>
             <p><strong>Main Developer:</strong> AI</p>
           </div>
+
           <div class="project">
             <h3>
               <a
@@ -206,6 +253,22 @@
             <p>Capture and retain key insights from meetings or lectures in just 30 seconds.</p>
             <p><strong>Main Developer:</strong> AI</p>
           </div>
+
+          <div class="project">
+            <h3>
+              <a
+                href="https://pypi.org/project/tasknow/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >TaskNow</a
+              >
+            </h3>
+            <p>
+              A terminal to-do app that helps you focus on one task at a time.
+            </p>
+            <p><strong>Main Developer:</strong> AI</p>
+          </div>
+
         </section>
       </main>
 
